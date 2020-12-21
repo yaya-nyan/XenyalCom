@@ -56,8 +56,9 @@ public class XenyalServer
     public static int Port;
     public static DataType dataType = DataType.None;
     public static User[] Users = new User[5];
-    public static Socket[] socs = new Socket[6];
+    public static Socket[] socs = new Socket[7];
     public static Socket newestSoc;
+    public static int newestSocIndex;
     public static TcpListener listener;
     public static byte[] bytes = new Byte[1024];
 
@@ -116,6 +117,7 @@ public class XenyalServer
                     string data = null;
                     int bytesRec = socs[i].Receive(bytes);
                     newestSoc = socs[i];
+                    newestSocIndex = i;
                     data += Encoding.ASCII.GetString(bytes, 0, bytesRec);
                     await ProcessData(data);
                     break;
@@ -175,6 +177,7 @@ public class XenyalServer
                     Console.WriteLine($"{data} failed to connect: Server Full.");
                     newestSoc.Send(Encoding.ASCII.GetBytes($"The Server you tried to connect to is full.<KICK>"));
                     newestSoc = null;
+                    socs[newestSocIndex] = null;
                     break;
                 }
                 if (!UserExists(data))
@@ -357,6 +360,7 @@ public class XenyalServer
                     Console.WriteLine($"User \"{name}\" disconnected.");
                     item.MessageThread.Active = false;
                     item.Soc.Close();
+                    socs[i] = null;
                     Users[i] = null;
                     return true;
                 }
