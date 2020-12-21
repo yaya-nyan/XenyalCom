@@ -1,0 +1,13 @@
+C:\Users\Flori\source\repos\XenyalCom\XenyalComServer\bin\Debug\netcoreapp3.1\XenyalComServer.exe
+C:\Users\Flori\source\repos\XenyalCom\XenyalComServer\bin\Debug\netcoreapp3.1\XenyalComServer.deps.json
+C:\Users\Flori\source\repos\XenyalCom\XenyalComServer\bin\Debug\netcoreapp3.1\XenyalComServer.runtimeconfig.json
+C:\Users\Flori\source\repos\XenyalCom\XenyalComServer\bin\Debug\netcoreapp3.1\XenyalComServer.runtimeconfig.dev.json
+C:\Users\Flori\source\repos\XenyalCom\XenyalComServer\bin\Debug\netcoreapp3.1\XenyalComServer.dll
+C:\Users\Flori\source\repos\XenyalCom\XenyalComServer\bin\Debug\netcoreapp3.1\XenyalComServer.pdb
+C:\Users\Flori\source\repos\XenyalCom\XenyalComServer\obj\Debug\netcoreapp3.1\XenyalComServer.csprojAssemblyReference.cache
+C:\Users\Flori\source\repos\XenyalCom\XenyalComServer\obj\Debug\netcoreapp3.1\XenyalComServer.AssemblyInfoInputs.cache
+C:\Users\Flori\source\repos\XenyalCom\XenyalComServer\obj\Debug\netcoreapp3.1\XenyalComServer.AssemblyInfo.cs
+C:\Users\Flori\source\repos\XenyalCom\XenyalComServer\obj\Debug\netcoreapp3.1\XenyalComServer.csproj.CoreCompileInputs.cache
+C:\Users\Flori\source\repos\XenyalCom\XenyalComServer\obj\Debug\netcoreapp3.1\XenyalComServer.dll
+C:\Users\Flori\source\repos\XenyalCom\XenyalComServer\obj\Debug\netcoreapp3.1\XenyalComServer.pdb
+C:\Users\Flori\source\repos\XenyalCom\XenyalComServer\obj\Debug\netcoreapp3.1\XenyalComServer.genruntimeconfig.cache
