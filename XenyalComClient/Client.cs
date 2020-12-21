@@ -89,32 +89,32 @@ namespace XenyalComClient
             while (choosingName)
             {
                 Text.ClearLines(9, 29);
-                Console.SetCursorPosition(50, 15);
+                Console.SetCursorPosition(50, 17);
                 Console.Write("Username: ");
                 Username = Console.ReadLine();
                 Text.ClearLine(15);
                 if (Username.Length > 10)
                 {
-                    Text.WriteLineCenter("Too long.", 15);
+                    Text.WriteLineCenter("Too long.", 17);
                     Console.ReadKey();
                     Username = string.Empty;
                 }
                 if (Username.Length == 0)
                 {
-                    Text.WriteLineCenter("Too short.", 15);
+                    Text.WriteLineCenter("Too short.", 17);
                     Console.ReadKey();
                     Username = string.Empty;
                 }
                 if (Username != string.Empty) choosingName = false;
             }
             Username = Username.Trim();
-            Text.WriteLineCenter("Name Accepted.", 15);
+            Text.WriteLineCenter("Name Accepted.", 17);
             Console.ReadKey();
             bool connecting = true;
             while(connecting)
             {
-                Text.ClearLines(10, 29);
-                Console.SetCursorPosition(50, 15);
+                Text.ClearLines(9, 29);
+                Console.SetCursorPosition(50, 17);
                 Console.Write("Server IP: ");
                 IP = Console.ReadLine();
                 int.TryParse(IP.Split(':')[1], out Port);
@@ -159,7 +159,7 @@ namespace XenyalComClient
                                 }
                                 else
                                 {
-                                    soc.Send(Encoding.ASCII.GetBytes($"{Username} said {messageText}<MSG>"));
+                                    soc.Send(Encoding.ASCII.GetBytes($"<{Username}> {messageText}<MSG>"));
                                 }
                             }
                             else UpdateMessageDisplay();
